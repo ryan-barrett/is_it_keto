@@ -30,7 +30,7 @@ class FoodIndexItem extends Component {
       foodEater: this.props.userId
     };
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/api/foodEntry", {
+    const response = await fetch("/api/foodEntry", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(entry)

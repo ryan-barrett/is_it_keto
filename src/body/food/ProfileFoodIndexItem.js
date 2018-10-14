@@ -21,7 +21,7 @@ class ProfileFoodIndexItem extends Component {
       id: this.props.id
     };
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/api/foodEntry", {
+    const response = await fetch("/api/foodEntry", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(entry)

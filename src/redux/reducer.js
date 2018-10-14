@@ -64,7 +64,7 @@ function callLoginApi(userName, password, callback) {
     password: password
   };
   setTimeout(async () => {
-    const response = await fetch("http://localhost:3001/api/userLogin", {
+    const response = await fetch("/api/userLogin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(request)

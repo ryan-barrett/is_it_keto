@@ -25,7 +25,7 @@ class SignUpForm extends Component {
   handleSignUp = async event => {
     event.preventDefault();
 
-    const response = await fetch("http://localhost:3001/api/users", {
+    const response = await fetch("/api/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(this.state)

@@ -61,7 +61,7 @@ class ProfileContainer extends Component {
 			this.props.history.push('/');
 		} else {
 			this.timesDataFetched++;
-			const response = await fetch('http://localhost:3001/api/userFoodEntries', {
+			const response = await fetch('/api/userFoodEntries', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({ userId: this.state.userId }),
